@@ -1,0 +1,24 @@
+how to run 
+npm install
+npm start
+
+
+sample .env
+
+DATABASE_NAME=
+DATABASE_USERNAME=
+DATABASE_PASSWORD= 
+DATABASE_DIALECT=
+DATABASE_HOST=
+DATABASE_PORT= 
+
+
+
+
+//local crediantials
+# DATABASE_NAME=api
+# DATABASE_USERNAME=root
+# DATABASE_PASSWORD=root
+# DATABASE_DIALECT=mysql
+# DATABASE_HOST=localhost
+# DATABASE_PORT=3308
