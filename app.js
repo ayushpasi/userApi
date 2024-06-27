@@ -25,11 +25,14 @@ app.get("/", (req, res) => {
   res.json("HELLO");
 });
 
+// Get the port from environment variables or default to 4000
+const PORT = process.env.PORT || 4000;
+
 // Sync database and start the server
 sequelize
   .sync()
   .then(() => {
-    app.listen(4000, () => {
+    app.listen(PORT, () => {
       console.log("App running on port http://localhost:4000");
     });
   })
