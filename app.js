@@ -18,7 +18,12 @@ app.use(bodyParser.urlencoded({ extended: false })); // Parse URL-encoded bodies
 app.use(express.json()); // Parse JSON bodies
 
 // Define routes
+
 app.use("/user", userRouter); // Use user routes
+// Define the root route to give a JSON response
+app.get("/", (req, res) => {
+  res.json("HELLO");
+});
 
 // Sync database and start the server
 sequelize
